@@ -106,7 +106,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         console.log("getExcel");
         console.log(request);
         //send data to dashboard.js
-        var e = request.data[0].result;
+        var e = request.data;
         console.log(e);
         d("", e);
         0 == all_lists.length && (all_lists["/"] = [e]);
